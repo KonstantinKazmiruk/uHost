@@ -42,8 +42,8 @@ body {
 .plan {
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
     display: inline-block;
     width: 30%;
     vertical-align: middle;
@@ -70,16 +70,16 @@ body {
 }
 
 .plan__feature {
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 #key-features{
     background: #ff1b68;
     margin-top: 80px;
-    padding: 16px;
+    padding: 1rem;
 }
 #key-features .section-title{
     color: white;
-    margin: 32px;
+    margin: 2rem;
 }
 .key-features__list{
     list-style: none;
@@ -100,13 +100,13 @@ body {
     border: 2px solid #424242;
     border-radius: 50%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.2rem;
 }
 .key-features__description{
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 /* h1 {
     font-family: sans-serif;
