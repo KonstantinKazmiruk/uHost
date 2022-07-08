@@ -9,7 +9,7 @@ body {
 
 #product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-     url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+     url("images/freedom.jpg") center/cover no-repeat border-box,
      #ff1b68;
     /*background-image: url("images/freedom.jpg");
     background-size: cover;
@@ -17,7 +17,7 @@ body {
     background-position: left 10% bottom 10%;*/
     width: 100vw;
     height: 33vh;
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
     position: relative;  
 }
 #product-overview h1 {
@@ -33,17 +33,11 @@ body {
     color: #2ddf5c;
     text-align: center;
 }
-.plan__list{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    
-}
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     width: 100%;
     vertical-align: middle;
 }
@@ -51,13 +45,12 @@ body {
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
     background: white;
     color: #19b84c;
-    padding: 8px;
+    padding: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
@@ -67,7 +60,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .plan__feature {
     margin: 0.5rem 0;
 }
@@ -85,12 +77,6 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-.key-features{
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-
 }
 .key-features__image{
     background: #ffcede;
@@ -158,7 +144,7 @@ body {
     background: #ff5454;
     border-color: #ff5454;
 }
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 60rem) {
     #product-overview{
         height: 40vh;
         background-position: 50% 25%;
@@ -166,5 +152,30 @@ body {
 
     #product-overview h1{
         font-size: 3rem;
+    }
+}
+@media (min-width: 40rem), (orientation: landscape){
+    .plan__list{
+        width: 100%;
+        text-align: center;  
+}
+    .plan{
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 13rem;
+        max-width: 25rem;
+    }
+    .plan--highlighted{
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+@media (min-width: 40rem){
+    .key-features{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        min-width: 13rem;
+        max-width: 25rem;
     }
 }
