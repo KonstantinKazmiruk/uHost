@@ -160,28 +160,31 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 30rem;
+       
 }
     .plan{
-        display: flex;
-        flex-direction: column;
         width: 30%;
         min-width: 13rem;
         max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
     }
     .plan--highlighted{
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         z-index: 600;
+        height: 30rem;
     }
 }
 @media (min-width: 40rem){
     .key-features{
-        display: inline-block;
         width: 30%;
-        vertical-align: top;
-        min-width: 13rem;
         max-width: 25rem;
+    }
+    .key-features__list{
+        display: flex;
+        justify-content: center;
+
     }
 }
