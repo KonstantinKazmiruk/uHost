@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -28,11 +33,9 @@ main{
   background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
-}
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -44,7 +47,6 @@ main{
   padding-bottom: 0;
   vertical-align: middle;
 }
-
 .toggle-button:focus {
   outline: none;
 }
@@ -61,31 +63,28 @@ main{
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  height: 2.5rem;
   /*width: 1.5rem;*/
-  display: inline-block;
-  vertical-align: middle;
+
 }
 
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -121,7 +120,6 @@ main{
 }
 
 .main-footer {
-  display: block;
   background: black;
   padding: 2rem;
   margin-top: 3rem;
@@ -130,11 +128,12 @@ main{
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  margin: 0.5rem 0;
 }
 .main-footer__link a {
   color: white;
@@ -159,9 +158,12 @@ main{
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -189,6 +191,31 @@ main{
 .button:focus {
   outline: none;
 }
+.button[disabled]{
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
 .open{
     display: block !important;
+}
+@media (min-width: 40rem){
+  .main-footer__link {
+    margin: 0 1rem;
+  }
+
+  .main-footer__links{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 40rem){
+  .toggle-button{
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+  }
 }
